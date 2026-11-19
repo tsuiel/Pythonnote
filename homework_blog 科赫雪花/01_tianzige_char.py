@@ -1,9 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
 
-
-运行方式：python tianzige_char.py
-"""
 
 # 字符常量：角点、横线、竖线、竖向虚线、横向虚线
 CORNER = "+"
