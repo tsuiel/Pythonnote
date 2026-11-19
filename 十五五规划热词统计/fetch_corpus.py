@@ -1,13 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-语料抓取脚本（可选，仅用于复现实验语料）
-从中国人大网抓取《中华人民共和国国民经济和社会发展第十五个五年规划纲要》全文，
-清洗 HTML 标签后保存为 UTF-8 纯文本。
 
-用法:  python fetch_corpus.py
-依赖:  requests（标准库 html.parser 用于解析，无其他第三方依赖）
-若网络不可用，可直接使用随项目附带的 data/十五五规划纲要.txt。
-"""
 
 from __future__ import annotations
 
