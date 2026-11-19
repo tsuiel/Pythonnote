@@ -1,39 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-=============================================================================
- “十五五”发展规划报告 热词频率统计程序
-=============================================================================
-功能：
-    1. 读取规划报告纯文本（默认随项目附带的《“十五五”规划纲要》全文）
-    2. jieba 中文分词 + 自定义政策词典 + 停用词过滤
-    3. 统计通用热词频率、重点政策主题词全文精确出现次数
-    4. 导出完整词频表 CSV（UTF-8 BOM，Excel 可直接打开）
-    5. 用 Pillow 绘制 Top N 词频柱状图与词云图
-    6. 控制台打印格式化统计报表
-
-用法：
-    python hotword_stats.py                          # 默认参数运行
-    python hotword_stats.py -i 我的报告.txt -n 30    # 指定语料与 Top30
-    python hotword_stats.py --keep-verbs             # 保留公文通用动词
-    python hotword_stats.py --no-chart               # 只统计不画图
-
-依赖说明：
-    - jieba 已内置于 vendor/，无需 pip install
-    - 绘图 / 截图使用 Pillow；若未安装，程序自动跳过图表，统计与 CSV 不受影响
-    - fetch_corpus.py（可选语料抓取脚本）需要 requests
-
-目录结构：
-    hotword_stats.py        主程序
-    generate_screenshot.py  实验截图生成脚本
-    fetch_corpus.py         语料抓取脚本（可选）
-    custom_dict.txt         jieba 用户词典（政策复合词）
-    stopwords.txt           停用词表
-    keywords.txt            重点政策主题热词清单
-    vendor/jieba/           内置 jieba 0.42 分词库
-    data/                   语料文本
-    output/                 运行结果与实验截图
-=============================================================================
-"""
 
 from __future__ import annotations
 
