@@ -1,8 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-把 01_tianzige_char.py 的控制台输出渲染成终端风格截图（PNG）。
-运行方式：python 04_char_screenshot.py
-"""
+
 
 import os
 import subprocess
