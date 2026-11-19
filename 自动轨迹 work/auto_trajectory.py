@@ -1,30 +1,4 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-自动轨迹绘制实验
-=================
-根据题目给出的六条运动指令，绘制自动轨迹。
 
-每条指令格式（与题目图片中的六行数据一致）：
-    X, Y, F, mode, flagX, flagY
-
-其中：
-    X, Y   —— 本段运动的终点坐标
-    F      —— 进给/速度参数（本组指令中均为 144）
-    mode   —— 1 表示 G1 直线插补，0 表示 G0 快速定位
-    flagX  —— X 轴使能标志
-    flagY  —— Y 轴使能标志
-
-flagX、flagY 与当前段的编号一起决定轨迹颜色：
-    100 -> red, 010 -> green, 001 -> blue,
-    110 -> cyan, 011 -> magenta, 101 -> orange
-
-运行方式：
-    python auto_trajectory.py
-
-输出：
-    trajectory.png —— 自动轨迹绘制结果
-"""
 
 from pathlib import Path
 
