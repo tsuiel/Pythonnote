@@ -1,15 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-实验截图生成脚本
-    1. 真实运行一次 hotword_stats.py，捕获控制台标准输出（保存为 运行日志.txt）
-    2. 把输出渲染成 Windows PowerShell 风格的终端截图
-    3. 把终端截图 + 柱状图 + 词云拼接成一张实验总览图
 
-用法:  python generate_screenshot.py
-输出:  output/01_程序运行截图.png
-       output/00_实验结果总览.png
-       output/运行日志.txt
-"""
 
 from __future__ import annotations
 
