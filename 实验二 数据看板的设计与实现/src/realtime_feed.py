@@ -1,8 +1,4 @@
-"""扩展1 · 模拟实时数据源。
 
-看板开启「实时数据流」后，按刷新间隔动态生成新订单写入 data/realtime_feed.csv，
-看板每次重跑会把 feed 合并进清洗结果，实现秒级/分钟级刷新的动态看板。
-"""
 from __future__ import annotations
 
 import random
