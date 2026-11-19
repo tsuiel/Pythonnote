@@ -1,10 +1,4 @@
-"""任务2 · 数据预处理：空值 / 异常值 / 重复 / 日期规范化 / 维度派生。
 
-清洗顺序固定且不可颠倒，每一步的剔除行数都会写入 data/cleaning_report.json，
-保证看板上的每个数字都能回溯到清洗日志。
-
-运行：python src/preprocess.py
-"""
 from __future__ import annotations
 
 import json
