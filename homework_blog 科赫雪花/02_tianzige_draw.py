@@ -1,12 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-P196 5.1 田字格图形绘制（matplotlib 版）
-=========================================
-用 matplotlib 绘制标准田字格：实线外框 + 虚线横竖中线，
-并可选叠加米字格对角线。图形保存为 PNG，作为实验截图。
 
-运行方式：python 02_tianzige_draw.py
-"""
 
 import os
 import matplotlib
